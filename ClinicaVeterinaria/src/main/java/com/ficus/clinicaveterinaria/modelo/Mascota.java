@@ -8,6 +8,17 @@ package com.ficus.clinicaveterinaria.modelo;
  *
  * @author abrah
  */
-public class Mascota {
+public class Mascota extends Animal {
     
+    private Propietario propietario;
+
+    public Mascota(String nombre, String especie, Propietario propietario) {
+        super(nombre, especie);
+        this.propietario = propietario;
+    }
+
+    public Propietario getPropietario() { return propietario; }
+    public void setPropietario(Propietario propietario) { this.propietario = propietario;
+    
+}
 }

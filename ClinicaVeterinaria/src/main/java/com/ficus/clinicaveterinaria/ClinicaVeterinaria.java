@@ -8,9 +8,18 @@ package com.ficus.clinicaveterinaria;
  *
  * @author abrah
  */
+
+import com.ficus.clinicaveterinaria.controller.VeterinariaControlador;
+import com.ficus.clinicaveterinaria.vista.VeterinariaVista;
+
 public class ClinicaVeterinaria {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
+public static void main(String[] args) {
+        VeterinariaVista vista = new VeterinariaVista();
+        VeterinariaControlador controlador = new VeterinariaControlador(vista);
+
+        controlador.iniciarFlujo();
+    }    
+    
+    
 }
